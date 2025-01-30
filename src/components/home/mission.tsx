@@ -1,5 +1,7 @@
+'use client'; 
 import { Users, Puzzle, Group, Wifi } from 'lucide-react'; // Импортируем иконки из Lucide
 import Image from 'next/image';
+
 const missprimacy = [
   {
     icon: Users,
@@ -33,36 +35,15 @@ const MissionSection = () => {
 
         {/* Иконки с подписями */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-          {missprimacy.map(item =>(
-            <div className="mission-card text-center">
-            <div className="mb-4">
+          {missprimacy.map((item, index) => (
+            <div key={index} className="mission-card text-center">
+              <div className="mb-4">
                 <item.icon className="w-16 h-16 mx-auto text-xl mb-6 text-blue-500" />
               </div>
-            <h4 className="text-2xl font-semibold mb-4">{item.title}</h4>
-            <p className="text-lg">{item.desc}</p>
-          </div>
+              <h4 className="text-2xl font-semibold mb-4">{item.title}</h4>
+              <p className="text-lg">{item.desc}</p>
+            </div>
           ))}
-          {/* <div className="mission-card text-center">
-            <Puzzle className="mx-auto text-4xl mb-4 text-blue-500" />
-            <h4 className="text-2xl font-semibold">RANDOM</h4>
-            <p className="text-lg">
-              Don’t worry during the event, our coordinators will help explain the rules of any game that interests you.
-            </p>
-          </div>
-          <div className="mission-card text-center">
-            <Wifi className="mx-auto text-4xl mb-4 text-blue-500" />
-            <h4 className="text-2xl font-semibold">RANDOM</h4>
-            <p className="text-lg">
-              Don’t worry during the event, our coordinators will help explain the rules of any game that interests you.
-            </p>
-          </div>
-          <div className="mission-card text-center">
-            <Group className="mx-auto text-4xl mb-4 text-blue-500" />
-            <h4 className="text-2xl font-semibold">TEAM BUILDING</h4>
-            <p className="text-lg">
-              Don’t worry during the event, our coordinators will help explain the rules of any game that interests you.
-            </p>
-          </div> */}
         </div>
       </div>
     </section>

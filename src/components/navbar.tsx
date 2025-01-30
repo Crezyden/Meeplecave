@@ -60,7 +60,7 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-4">
             <a href="#contact" className="bg-[#394DFF] text-white hover:bg-[#0b1dbf ] px-6 py-2 rounded-full text-sm font-mono">
-              GAME CATALOG
+              CONTACTS US
             </a>
 
             <div className="relative" ref={langMenuRef}>
