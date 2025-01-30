@@ -8,8 +8,6 @@ import Footer from '@/src/components/footer';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
-const oxanium = Oxanium({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
@@ -17,8 +15,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const { i18n } = useTranslation();
-  const [isClient, setIsClient] = useState(false);
-
 
 
   return (

@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image'; // Используем Image компонент от Next.js для оптимизации изображений
 
 const AboutSection = () => {
   return (

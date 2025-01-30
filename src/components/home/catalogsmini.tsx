@@ -1,6 +1,4 @@
 'use client';
-import { useEffect, useState } from "react";
-import { getSheetData } from "../../app/api/sheets";
 import GameItem from "../ux/gameitems";
 import { Igames } from "../../types/games";
 

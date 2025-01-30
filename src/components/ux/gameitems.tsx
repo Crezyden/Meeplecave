@@ -1,8 +1,7 @@
 // components/GameItem.tsx
 import Image from 'next/image';
 import styles from './styles/game.module.scss';
-import { Igames } from '../../types/games';
-import { useRouter } from 'next/router';
+
 
 const GameItem  = ({ title, description, img }: { title: string, description: string, img: string }) => {
 

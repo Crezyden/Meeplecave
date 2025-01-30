@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { ChevronDown, X, Menu, Facebook, Instagram } from 'lucide-react';
+import {Facebook, Instagram } from 'lucide-react';
 
 export default function ThreeBlocksInRow() {
   return (

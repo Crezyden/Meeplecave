@@ -1,6 +1,6 @@
 'use client'; 
 import { Users, Puzzle, Group, Wifi } from 'lucide-react'; // Импортируем иконки из Lucide
-import Image from 'next/image';
+
 
 const missprimacy = [
   {
